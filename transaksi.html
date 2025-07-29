@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transsaction - Basic Tee</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styleII.css">
+  </head>
+
+  <body>
+    <header>
+      <a href="Index.html" class="title"><h1>BASIC TEE</h1></a>
+    </header>
+
+    <div class="container">
+      <h2>Form Transaksi</h2>
+      <form>
+        <table>
+          <tr>
+            <td colspan="2"><strong>Informasi Pribadi</strong></td>
+          </tr>
+          <tr>
+            <td>Nama Lengkap*</td>
+            <td><input type="text" name="nama" required></td>
+          </tr>
+          <tr>
+            <td>Email*</td>
+            <td><input type="email" name="email" required></td>
+          </tr>
+          <tr>
+            <td>No. Telepon*</td>
+            <td><input type="tel" name="telepon" required></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><strong>Informasi Pengiriman</strong></td>
+          </tr>
+          <tr>
+            <td>Alamat Lengkap*</td>
+            <td><textarea name="alamat" rows="3" required></textarea></td>
+          </tr>
+          <tr>
+            <td>Kota*</td>
+            <td><input type="text" name="kota" required></td>
+          </tr>
+          <tr>
+            <td>Kode Pos*</td>
+            <td><input type="text" name="kodePos" required></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><strong>Informasi Produk</strong></td>
+          </tr>
+          <tr>
+            <td>Nama Produk</td>
+            <td><input type="text" id="produkTerpilih" name="produk"
+                readonly></td>
+          </tr>
+          <tr>
+            <td>Ukuran*</td>
+            <td>
+              <select name="ukuran" required>
+                <option value>Pilih Ukuran</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Jumlah*</td>
+            <td><input type="number" name="jumlah" min="1" max="10" value="1"
+                required></td>
+          </tr>
+          <tr>
+            <td>Catatan</td>
+            <td><textarea name="catatan" rows="2"
+                placeholder="Catatan tambahan untuk pesanan"></textarea></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><strong>Pembayaran</strong></td>
+          </tr>
+          <tr>
+            <td>Metode Pembayaran*</td>
+            <td>
+              <select name="metode" required>
+                <option value>Pilih Metode Pembayaran</option>
+                <option value="transfer">Transfer Bank</option>
+                <option value="cod">COD (Cash on Delivery)</option>
+                <option value="ewallet">E-Wallet</option>
+                <option value="cc">Credit Card</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Total Harga</td>
+            <td><input type="text" id="totalHarga" readonly></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <br>
+              <input type="submit" value="KONFIRMASI!">
+            </td>
+          </tr>
+        </table>
+      </form>
+
+    </div>
+
+    <footer>
+      <i>10524035 - M FARHAN R</i>
+    </footer>
+
+    <script src="JS/transaksiJS.js"></script>
+  </body>
+</html>
