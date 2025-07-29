@@ -1,14 +1,14 @@
 const products = [
-  { name: "Basic Tee 1", image: "Images/1.jpg" },
-  { name: "Basic Tee 2", image: "Images/2.jpg" },
-  { name: "Basic Tee 3", image: "Images/3.jpg" },
-  { name: "Basic Tee 4", image: "Images/4.jpg" },
-  { name: "Basic Tee 5", image: "Images/5.jpg" },
-  { name: "Basic Tee 2", image: "Images/2.jpg" },
-  { name: "Basic Tee 3", image: "Images/3.jpg" },
-  { name: "Basic Tee 5", image: "Images/5.jpg" },
-  { name: "Basic Tee 4", image: "Images/4.jpg" },
-  { name: "Basic Tee 1", image: "Images/1.jpg" },
+  { name: "Basic Tee 1", image: "../Images/1.jpg" },
+  { name: "Basic Tee 2", image: "../Images/2.jpg" },
+  { name: "Basic Tee 3", image: "../Images/3.jpg" },
+  { name: "Basic Tee 4", image: "../Images/4.jpg" },
+  { name: "Basic Tee 5", image: "../Images/5.jpg" },
+  { name: "Basic Tee 2", image: "../Images/2.jpg" },
+  { name: "Basic Tee 3", image: "../Images/3.jpg" },
+  { name: "Basic Tee 5", image: "../Images/5.jpg" },
+  { name: "Basic Tee 4", image: "../Images/4.jpg" },
+  { name: "Basic Tee 1", image: "../Images/1.jpg" },
 ];
 
 const container = document.getElementById("productGrid");
