@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+header,
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.title {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form table {
+  width: 100%;
+}
+
+form td {
+  padding: 8px;
+  vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+.invoice-item {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

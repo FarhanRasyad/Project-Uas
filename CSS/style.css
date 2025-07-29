@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+main {
+  width: 80%;
+  padding: 20px;
+}
+
+header {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-style: italic;
+  letter-spacing: 6px;
+  font-weight: 700;
+}
+
+.header-marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.header-marquee h1 {
+  display: inline-block;
+  color: #000;
+  font-size: 2rem;
+  animation: scroll-left 5s linear infinite;
+}
+
+.marquee {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-out;
+}
+
+nav {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+aside {
+  width: 20%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li {
+  margin: 10px 0;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+aside li:hover {
+  color: #007bff;
+  transform: translateX(5px);
+}
+
+aside li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 6px;
+  width: 6px;
+  background-color: #007bff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+aside li:hover::before {
+  opacity: 1;
+}
+
+aside ul ul li {
+  font-weight: normal;
+  margin-left: 20px;
+  font-size: 0.95rem;
+  color: #555;
+  transition: color 0.3s, transform 0.3s;
+}
+
+aside ul ul li:hover {
+  color: #007bff;
+  transform: translateX(3px);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  animation: fadeUp 0.6s ease both;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-card p {
+  margin: 10px 0 5px;
+}
+
+.product-card a {
+  display: inline-block;
+  margin-top: 5px;
+  background-color: #000;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.product-card a:hover {
+  background-color: #444;
+}
+
+.invoice-card {
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.invoice-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+.content-frame,
+.text-content,
+.image-anim {
+  animation: fadeUp 0.6s ease both;
+}
+
+.image-anim {
+  border: 2px solid #000;
+  padding: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.image-anim:hover {
+  border-color: #007bff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(250%);
+  }
+
+  100% {
+    transform: translateX(-250%);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
